@@ -1,0 +1,14 @@
+.external{
+    background-color: rgb(140, 238, 205);
+    height: 600px;
+    width: 500px;
+}
+
+#idSelector{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+*{
+    background-color: blue;
+}
