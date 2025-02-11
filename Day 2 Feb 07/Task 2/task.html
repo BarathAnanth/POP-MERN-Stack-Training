@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        fieldset {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+        }
+        th {
+            text-align: left;
+        }
+        td {
+            text-align: left;
+        }
+        .buttons {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <fieldset>
+        <legend><strong>Registration Form</strong></legend>
+        <form action="home.html">
+            <table cellpadding="10px">
+                <tr>
+                    <th><label for="fname">First Name</label></th>
+                    <td><input type="text" id="fname" required /></td>
+                </tr>
+                <tr>
+                    <th><label for="lname">Last Name</label></th>
+                    <td><input type="text" id="lname" required /></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email</label></th>
+                    <td><input type="email" id="email" required /></td>
+                </tr>
+                <tr>
+                    <th><label for="dob">D.O.B</label></th>
+                    <td><input type="date" id="dob" required /></td>
+                </tr>
+                <tr>
+                    <th><label for="password">Password</label></th>
+                    <td><input type="password" id="password" required /></td>
+                </tr>
+                <tr>
+                    <th><label for="confirm_password">Verify Password</label></th>
+                    <td><input type="password" id="confirm_password" required /></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" required />
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required />
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr class="buttons">
+                    <td colspan="2" align="center">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+</body>
+</html>
