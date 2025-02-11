@@ -1,8 +1,30 @@
 .bxmdl{
-    color: rgb(3, 82, 13);
-    background-color: rgb(255, 239, 239);
-    padding: 200px;
-    border: solid 2px;
-    border-color: black;
-    margin: ;
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border: solid 3px;
+    border-color: #f77f00;
+    border-radius: 5px;
+    margin-top:;
+}
+
+h1{
+    background-color: #f77f00;
+    color: #fef8d6;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: solid 5px;
+    border-color: #d62828;
+    border-radius: 10px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    opacity: 85%;
+    margin: -9px;
+}
+
+*{
+    background-color: #003049;
 }
