@@ -1,0 +1,11 @@
+.flt-left{
+    float: left;
+    margin: 20px;
+    border: 10px solid;
+    opacity: 50%;
+}
+
+.flt-right{
+    float: right;
+    margin: 20px;
+}

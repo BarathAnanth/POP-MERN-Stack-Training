@@ -1,0 +1,9 @@
+.cl1, h2{
+    display: inline;
+}
+
+span{
+    margin: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
