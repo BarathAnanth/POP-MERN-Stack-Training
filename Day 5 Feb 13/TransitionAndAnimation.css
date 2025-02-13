@@ -1,0 +1,50 @@
+.transition{
+    color: beige;
+    transition: padding 10s, height 10s; width 10s, color 5s;
+}
+
+.transition:hover{
+    background-color: dimgray;
+    color: beige;
+    padding: 30px;
+    height: 100px;
+    width: 400px;
+    transform: rotate(360deg);
+}
+@keyframes animationDiv {
+    0%{
+        left: 0px;
+        top: 0px;
+        background-color: blue;
+    }
+    25%{
+        left: 100px;
+        top: 0px;
+        background-color: brown;
+    }
+    50%{
+        left: 100px;
+        top: 100px;
+        background-color: blanchedalmond;
+    }
+    75%{
+        left: 0px;
+        top: 100px;
+        background-color:chartreuse ;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+        background-color:blueviolet;
+
+    }
+}
+.animation{
+    position: relative;
+    animation-name: animationDiv ;
+    background-color: beige;
+    width: 100px;
+    height: 100px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
