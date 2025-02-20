@@ -29,7 +29,7 @@ function details()
     <tr><td><label for="number">Mobile no</label></td>
     <td><input type="text" placeholder="Enter your Mobilenum"required></input></td></tr></table>
     <button class="bt" type='submit'>Signup</button><br></br>
-    <Link class="L" to="./login">Already have account?</Link>
+    <Link class="L" to="/login">Already have account?</Link>
   </form>
   </center>
 

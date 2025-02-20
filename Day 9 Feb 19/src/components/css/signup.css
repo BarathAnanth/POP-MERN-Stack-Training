@@ -1,89 +1,44 @@
 .fm {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  color: #333;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #c6dcff;
+}
+.fr {
+  width: 100%;
+}
 
-    background: rgba(255, 255, 255, 0.9);
+.fr td {
+  padding: 10px;
+}
+
+center {
+  font-family: Arial, sans-serif;
+  background-color:rgb(131, 214, 237);
+  color: #fff;
+  padding: 20px;
+}
+button {
+  background: rgb(244, 43, 43);
+  color: white;
+  border: solid 1px black;
+  padding: 10px 15px;
+  border-radius: 5px;
   
-    padding: 20px;
-  
-    border-radius: 10px;
-  
-    width: 350px;
-  
-    color: #333;
-  
-  }
-  
-  input[type="text"],
-  
-  input[type="email"],
-  
-  input[type="password"],
-  
-  input[type="date"] {
-  
-    width: 100%;
-  
-    padding: 8px;
-  
-    border: 1px solid #ccc;
-  
-    border-radius: 5px;
-  
-    font-size: 14px;
-  
-    background-color: #c6dcff;
-  
-  }
-  
-  .fr {
-  
-    width: 100%;
-  
-  }
-  
-  
-  
-  .fr td {
-  
-    padding: 10px;
-  
-  }
-  
-  
-  
-  center {
-  
-    font-family: Arial, sans-serif;
-  
-    background-color:rgb(131, 214, 237);
-  
-    color: #fff;
-  
-    padding: 20px;
-  
-  }
-  
-  button {
-  
-    background: rgb(244, 43, 43);
-  
-    color: white;
-  
-    border: none;
-  
-    padding: 10px 15px;
-  
-    font-size: 16px;
-  
-    border-radius: 5px;
-  
-    margin-top: 10px;
-  
-  }
-  
-  .L{
-  
-    color:blue;
-  
-  text-decoration: none;
-  
-  }
+}
+.L{
+  color:blue;
+text-decoration: none;
+}

@@ -1,17 +1,57 @@
-import {Link} from 'react-router-dom';
-import '../css/navbar.css'
-const navbar = ()=>
-{
-  return(
-  <header>
-    <nav>
-      <li><Link to='/'>Home</Link></li>
-      <li><Link to='/about'>About</Link></li>
-      <li><Link to='/gallery'>Gallery</Link></li>
-      <li><Link to='/contact'>Contact</Link></li>
-      <li><Link to='/signup'>Signup</Link></li>
-    </nav>
-  </header>)
-}
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import "../css/navbar.css";
 
-export default navbar;
+const Navbar = () => {
+  const [dd, showdd] = useState(false);
+
+  return (
+    <header>
+      <nav>
+        <Link className="li" to="/">
+          Home
+        </Link>
+        <Link className="li" to="/about">
+          About
+        </Link>
+        <Link className="li" to="/gallery">
+          Gallery
+        </Link>
+        <Link className="li" to="/contact">
+          Contact
+        </Link>
+        <div
+          className="dd"
+          onMouseEnter={() => showdd(true)}
+          onMouseLeave={() => showdd(false)}
+        >
+          <span className="dropbtn">Hooks</span>
+          {dd && (
+            <div className="list">
+              <Link className="dc" to="/usestate">
+                Use State
+              </Link>
+              <Link className="dc" to="/useeffect">
+                Use Effect
+              </Link>
+              <Link className="dc" to="/useeffapi">
+                Use Effect API
+              </Link>
+              <Link className="dc" to = "/UseRef">
+                Use Ref
+              </Link>
+              <Link className="dc" to = "/UseMemo">
+                Use Memo
+              </Link>
+            </div>
+          )}
+        </div>
+        <Link className="li" to="/login">
+          Login
+        </Link>
+      </nav>
+    </header>
+  );
+};
+
+export default Navbar;

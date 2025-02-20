@@ -1,9 +1,13 @@
 function contact()
 {
-  
+  var styling = {
+    textAlign:"center",
+    backgroundColor:"blue",
+    color:"white"
+  }
   return (
     <div>
-      <h1>Contact page</h1>
+      <h1 style={styling}>Contact page</h1>
     </div>
   )
 }

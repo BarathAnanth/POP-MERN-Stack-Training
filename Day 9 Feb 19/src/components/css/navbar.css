@@ -1,9 +1,59 @@
-nav
-{
+nav {
   display: flex;
   list-style-type: none;
-  background-color:rgb(32, 124, 177);
-  color: azure;
+  background-color: rgb(20, 133, 233);
   justify-content: space-around;
-  padding : 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.li {
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.li:hover,
+.dd:hover .dropbtn {
+  color: rgb(20, 133, 233);
+  background-color: white;
+  border-radius: 10px;
+}
+
+.list {
+  display: none;
+  position: absolute;
+  background-color: rgb(139, 183, 236);
+  border-radius: 10px;
+  width: 150px;
+  top: 50px;
+  z-index: 1000;
+}
+
+.dd:hover .list {
+  display: block;
+}
+
+.dropbtn {
+  display: inline-block;
+  color: rgb(224, 230, 232);
+  background-color: rgb(20, 133, 233);
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+.dc {
+  color: rgb(0, 0, 0);
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dc:hover {
+  background-color: rgb(255, 255, 255);
+  border: solid rgb(20, 133, 233);
 }
