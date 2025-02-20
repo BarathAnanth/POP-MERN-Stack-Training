@@ -1,0 +1,9 @@
+nav
+{
+  display: flex;
+  list-style-type: none;
+  background-color:rgb(32, 124, 177);
+  color: azure;
+  justify-content: space-around;
+  padding : 10px;
+}
