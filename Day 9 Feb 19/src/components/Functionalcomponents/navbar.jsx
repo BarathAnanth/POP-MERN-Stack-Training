@@ -3,52 +3,32 @@ import { useState } from "react";
 import "../css/navbar.css";
 
 const Navbar = () => {
-  const [dd, showdd] = useState(false);
+  const [dropdownVisible, setDropdownVisible] = useState(false);
 
   return (
     <header>
       <nav>
-        <Link className="li" to="/">
-          Home
-        </Link>
-        <Link className="li" to="/about">
-          About
-        </Link>
-        <Link className="li" to="/gallery">
-          Gallery
-        </Link>
-        <Link className="li" to="/contact">
-          Contact
-        </Link>
-        <div
+        <Link className="li" to="/">Home</Link>
+        <Link className="li" to="/about">About</Link>
+        <Link className="li" to="/gallery">Gallery</Link>
+        <Link className="li" to="/contact">Contact</Link>
+        <div 
           className="dd"
-          onMouseEnter={() => showdd(true)}
-          onMouseLeave={() => showdd(false)}
+          onMouseEnter={() => setDropdownVisible(true)}
+          onMouseLeave={() => setDropdownVisible(false)}
         >
           <span className="dropbtn">Hooks</span>
-          {dd && (
+          {dropdownVisible && (
             <div className="list">
-              <Link className="dc" to="/usestate">
-                Use State
-              </Link>
-              <Link className="dc" to="/useeffect">
-                Use Effect
-              </Link>
-              <Link className="dc" to="/useeffapi">
-                Use Effect API
-              </Link>
-              <Link className="dc" to = "/UseRef">
-                Use Ref
-              </Link>
-              <Link className="dc" to = "/UseMemo">
-                Use Memo
-              </Link>
+              <Link className="dc" to="/usestate">Use State</Link>
+              <Link className="dc" to="/useeffect">Use Effect</Link>
+              <Link className="dc" to="/useeffapi">Use Effect API</Link>
+              <Link className="dc" to="/useref">Use Ref</Link>
+              <Link className="dc" to="/usememo">Use Memo</Link>
             </div>
           )}
         </div>
-        <Link className="li" to="/login">
-          Login
-        </Link>
+        <Link className="li" to="/login">Login</Link>
       </nav>
     </header>
   );

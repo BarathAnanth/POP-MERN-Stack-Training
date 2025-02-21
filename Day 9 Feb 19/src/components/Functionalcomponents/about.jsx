@@ -1,16 +1,17 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-function about()
-{
-  var styling = {
-    textAlign:"center",
-    backgroundColor:"blue",
-    color:"white"
-  }
+const styling = {
+  textAlign: "center",
+  backgroundColor: "#87CEEB",
+  color: "white",
+  padding: "20px",
+  borderRadius: "10px",
+};
+function about() {
   return (
     <div>
       <h1 style={styling}>About Page</h1>
     </div>
   );
 }
-export default about
+export default about;

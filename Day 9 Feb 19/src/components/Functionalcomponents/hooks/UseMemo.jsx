@@ -24,7 +24,7 @@ const UseMemo = () => {
           onChange={(e) => setNumber(e.target.value)}
         />
         <h2>The Number is {number}</h2>
-        <h2>The Number is {slowFuntion(number)}</h2>
+        <h2>The 2*Number is {slowFuntion(number)}</h2>
         </div>
     </>
   );

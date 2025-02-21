@@ -1,14 +1,16 @@
-function contact()
-{
-  var styling = {
-    textAlign:"center",
-    backgroundColor:"blue",
-    color:"white"
-  }
+function Contact() {
+  const styling = {
+    textAlign: "center",
+    backgroundColor: "#87CEEB", // Light Blue
+    color: "white",
+    padding: "20px",
+    borderRadius: "10px",
+  };
+
   return (
     <div>
-      <h1 style={styling}>Contact page</h1>
+      <h1 style={styling}>Contact Page</h1>
     </div>
-  )
+  );
 }
-export default contact
+export default Contact;
