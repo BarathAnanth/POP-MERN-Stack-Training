@@ -12,6 +12,10 @@ import Use_State from './components/Functionalcomponents/hooks/usestate';
 import EffectApi from './components/Functionalcomponents/hooks/UseEffectApi';
 import UseRef from './components/Functionalcomponents/hooks/UseRef';
 import UseMemo from './components/Functionalcomponents/hooks/UseMemo';
+import UseCallback from './components/Functionalcomponents/hooks/UseCallback';
+import UseMemoize from './components/Functionalcomponents/hooks/UseMemoize';
+import HoC from './components/Functionalcomponents/Hoc/HoC';
+import Memo from './components/Memoization/Memo';
 
 function App() {
   return (
@@ -31,6 +35,10 @@ function App() {
             <Route path='/useeffapi' element={<EffectApi/>}/>
             <Route path='/UseRef' element={<UseRef/>} />
             <Route path='/UseMemo' element={<UseMemo/>} />
+            <Route path='/UseCallback' element={<UseCallback/>} />
+            <Route path='/UseMemoize' element={<UseMemoize/>} />
+            <Route path='/Hoc' element={<HoC/>} />
+            <Route path='/Memo' element={<Memo />} />
           </Routes>
         </div>
       </BrowserRouter>
