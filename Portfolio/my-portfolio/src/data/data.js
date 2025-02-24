@@ -8,12 +8,12 @@ export const navLinks = [
 ];
 
 export const skills = [
-  { name: 'HTML', icon: '../assets/images/skills/html.png' },
-  { name: 'CSS', icon: '../assets/images/skills/css.png' },
-  { name: 'JavaScript', icon: '../assets/images/skills/js.png' },
-  { name: 'React', icon: '../assets/images/skills/react.png' },
-  { name: 'Python', icon: '../assets/images/skills/python.png' },
-  { name: 'Java', icon: '../assets/images/skills/java.png' },
+  { name: 'HTML', icon: '/html.png' },
+  { name: 'CSS', icon: '/css.png' },
+  { name: 'JavaScript', icon: '/js.png' },
+  { name: 'React', icon: '/react.png' },
+  { name: 'Python', icon: '/python.png' },
+  { name: 'Java', icon: '/java.png' },
 ];
 
 export const codingProfiles = [

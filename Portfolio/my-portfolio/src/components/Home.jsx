@@ -22,7 +22,7 @@ const Home = ({ setActiveSection }) => {
               Get in Touch
             </button>
           </div>
-          <img src="../assets/images/profile.jpg" alt="Profile" className="profile-image" />
+          <img src="/profile.jpg" alt="Profile" className="profile-image" />
         </div>
       </div>
     </section>
