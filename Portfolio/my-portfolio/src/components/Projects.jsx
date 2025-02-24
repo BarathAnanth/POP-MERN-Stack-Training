@@ -1,4 +1,4 @@
-import { projects } from '../data/data';
+import { projects } from "../data/data";
 
 const Projects = () => {
   return (
@@ -7,7 +7,9 @@ const Projects = () => {
       <div className="projects-grid">
         {projects.map((project) => (
           <div key={project.id} className="project-card">
-            <h3 className="project-title">{project.title}</h3>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <h3>{project.title}</h3>
+            </a>{" "}
             <p className="project-description">{project.description}</p>
           </div>
         ))}

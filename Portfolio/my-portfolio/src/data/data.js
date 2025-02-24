@@ -43,7 +43,8 @@ export const projects = [
   {
     id: 1,
     title: 'Jump-Froggy',
-    description: 'An engaging web-based game where players control a frog that must jump across lily pads to reach the final pad. Players can set the maximum jump distance, and the goal is to minimize the total number of jumps needed to reach the end of the pond.'
+    description: 'An engaging web-based game where players control a frog that must jump across lily pads to reach the final pad. Players can set the maximum jump distance, and the goal is to minimize the total number of jumps needed to reach the end of the pond.',
+    link: 'https://barathananth.github.io/Jump-Froggy/'
   },
   {
     id: 2,
