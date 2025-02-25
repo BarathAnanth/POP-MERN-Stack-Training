@@ -1,12 +1,15 @@
 import React from "react";
+import { createContext } from "react";
+import Result from "./StudentResults";
 
 export const ResPub = createContext();
 
-const CoE = () => {
+const CoE = (res) => {
   return (
-    <ResultPublished.Provider value = {{sgpa:"10 SGPA", cgpa: "10 CGPA"}}>
-      <h1>Result Published</h1>
-    </ResultPublished.Provider>
+    <div>
+      <h1>Result published</h1>
+      <Result sgpa={res.sgpa} cgpa={res.cgpa} />
+    </div>
   );
 };
 

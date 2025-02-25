@@ -1,12 +1,13 @@
-import React from 'react'
+import React from "react";
+import CoE from "./CoE";
 
-const Faculty = () => {
+export const Faculty = (res) => {
   return (
     <div>
-        <h1>Faculty  Correcting Paper</h1>
-        <CoE sgpa={res.sgpa} cgpa={res.cgpa} />
+      <h1>Faculty Correcting Paper</h1>
+      <CoE sgpa={res.sgpa} cgpa={res.cgpa} />
     </div>
-  )
-}
+  );
+};
 
-export default Faculty
+export default Faculty;
