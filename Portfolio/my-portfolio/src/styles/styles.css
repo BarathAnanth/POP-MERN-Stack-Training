@@ -127,21 +127,24 @@ body {
 /* about */
 .about-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   gap: 2rem;
+  
 }
 
 .resume-button {
   background: transparent;
   border: 2px solid var(--neon-cyan);
   color: var(--neon-cyan);
+  border-radius: 7px;
   padding: 1rem 2rem;
   margin-top: 20 px;
   cursor: pointer;
   transition: all 0.3s ease;
+  width: 15%;
 }
 
-.resume-button:hover {
+.resume-button:hover, .get-in-touch:hover {
   background: rgba(100, 255, 218, 0.1);
 }
 
@@ -310,4 +313,206 @@ body {
 a{
   text-decoration: none;
   color: white;
+}
+
+/* Get In TOuch */
+.get-in-touch {
+  background: transparent;
+  border: 2px solid var(--neon-cyan);
+  color: var(--neon-cyan);
+  padding: 1rem 2rem;
+  margin-top: 20 px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Mobile-First Approach */
+@media (max-width: 768px) {
+  .nav-content {
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    display: none; /* Consider adding hamburger menu for mobile */
+  }
+
+  .section {
+    padding: 4rem 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .home-section {
+    padding-top: 60px;
+  }
+
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .home-text {
+    order: 2;
+    max-width: 100%;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    order: 1;
+    background-size: cover;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-button {
+    width: auto;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .profiles-grid {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .social-links-container {
+    gap: 1rem;
+  }
+
+  .social-link svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+  .about-content {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .profile-image {
+    margin-left: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .resume-button {
+    margin-top: 2rem;
+  }
+}
+
+/* Additional Improvements */
+.section {
+  scroll-margin-top: 80px; /* Prevent fixed navbar overlap */
+}
+
+.home-text {
+  margin-right: 2rem;
+}
+
+.profile-image {
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.skill-item {
+  padding: 1rem;
+  background: rgba(100, 255, 218, 0.05);
+  border-radius: 8px;
+}
+
+.form-input {
+  margin-bottom: 1.5rem;
+}
+
+/* Button Enhancements */
+.button-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.resume-button, .get-in-touch {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+/* Typography Improvements */
+body {
+  line-height: 1.6;
+}
+
+.home-title {
+  line-height: 1.2;
+}
+
+.home-subtitle {
+  color: var(--slate-gray);
+  max-width: 80%;
+}
+
+/* Project Card Content */
+.project-links {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Skill Icons */
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Form Enhancements */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Profile Links */
+.profile-link {
+  padding: 1rem 1.5rem;
 }

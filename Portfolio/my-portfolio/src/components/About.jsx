@@ -19,15 +19,15 @@ const About = () => {
             technological advancements and applying my knowledge to create
             intuitive and engaging user experiences.
           </p>
-          <a
-            href="https://drive.google.com/file/u/1/d/14UMAxBzApz5a0d4QMCQRZ99bbEDCRD79/view?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="resume-button"
-          >
-            View Resume
-          </a>
         </div>
+        <a
+          href="https://drive.google.com/file/u/1/d/14UMAxBzApz5a0d4QMCQRZ99bbEDCRD79/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resume-button"
+        >
+          View Resume
+        </a>
       </div>
     </section>
   );

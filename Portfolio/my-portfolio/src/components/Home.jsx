@@ -8,24 +8,24 @@ const Home = ({ setActiveSection }) => {
   };
 
   return (
-    <section id="home" className="home-section">
-      <div className="section">
-        <div className="home-content">
-          <div className="home-text">
-            <h1 className="home-title">
-              Hi, I'm <span style={{ color: "#64FFDA" }}>Barath Ananth</span>
-            </h1>
-            <p className="home-subtitle">
-              Computer Science Undergrad
-            </p>
-            <button onClick={handleGetInTouch} className="resume-button">
-              Get in Touch
-            </button>
+    <center>
+      <section id="home" className="home-section">
+        <div className="section">
+          <div className="home-content">
+            <div className="home-text">
+              <h1 className="home-title">
+                Hi, I'm <span style={{ color: "#64FFDA" }}>Barath Ananth</span>
+              </h1>
+              <p className="home-subtitle">Computer Science Undergrad</p>
+              <button onClick={handleGetInTouch} className="get-in-touch">
+                Get in Touch
+              </button>
+            </div>
+            <img src="/profile.jpg" alt="Profile" className="profile-image" />
           </div>
-          <img src="/profile.jpg" alt="Profile" className="profile-image" />
         </div>
-      </div>
-    </section>
+      </section>
+    </center>
   );
 };
 
