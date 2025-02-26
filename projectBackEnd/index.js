@@ -3,12 +3,13 @@ const mdb = require("mongoose");
 const dotenv = require("dotenv");
 const bcrypt = require("bcrypt");
 const Signup = require("./model/signupSchema");
-
+const cors = require("cors");
 const app = express();
-const port = 3001;
+const port = 3002; // Change the port number
 dotenv.config();
 
 app.use(express.json());
+app.use(cors());
 
 console.log(process.env.MONGO_URL);
 mdb
@@ -23,12 +24,19 @@ app.get("/1", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(
-    "D:\\HOPE\\MERN Stack Training\\Day 02 Feb 07\\HTML_CSS\\index.html"
-  );
+  res.send("<h1> Welcome to Backend Deployment</h1>");
 });
 
-app.get("/getsignedup", async (req, res) => {});
+app.get("/getsignedup", async (req, res) => {
+  try {
+    const signup = await Signup.find();
+    console.log(signup);
+    res.send({ message: "Signup details fetched", data: signup });
+  } catch (error) {
+    console.log("Error", error);
+    res.status(500).send({ message: "Error fetching signup details" });
+  }
+});
 
 app.post("/login", async (req, res) => {
   try {
