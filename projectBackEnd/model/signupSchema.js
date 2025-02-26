@@ -1,13 +1,11 @@
-const mdb = require("mongoose");
+const mongoose = require('mongoose');
 
-const signupSchema = mdb.Schema({
-  firstName: String,
-  lastName: String,
-  email: String,
-  password: String,
-  phoneNumber: Number
+const signupSchema = new mongoose.Schema({
+  firstName: { type: String, required: true },
+  lastName: { type: String, required: true },
+  email: { type: String, required: true, unique: true },
+  password: { type: String, required: true },
+  phoneNumber: { type: String, required: true },
 });
 
-const signup_schema = mdb.model("signup", signupSchema);
-
-module.exports = signup_schema;
+module.exports = mongoose.model('Signup', signupSchema);
