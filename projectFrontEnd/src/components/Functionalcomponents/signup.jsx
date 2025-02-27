@@ -20,7 +20,7 @@ function Signup() {
 
   const handleSignup = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3002/signup", {
+    axios.post("https://pop-mern-stack-training-backend.onrender.com/signup", {
       firstName: firstName,
       lastName: lastName,
       email: email,
